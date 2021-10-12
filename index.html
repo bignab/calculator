@@ -7,7 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='sheets/stylesheet.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='sheets/normalize.css'>
-    <script src='scripts/script.js'></script>
+    <script src='scripts/script.js' defer></script>
 </head>
 <body>
     <header>
@@ -16,7 +16,12 @@
     
     <div id="calculatorDiv">
         <div id="calcScreen">
-            
+            <div id="calcScreenTextOneDiv">
+                <p id="calcScreenTextOne" class="calcScreenText"></p>
+            </div>
+            <div id="calcScreenTextTwoDiv">   
+                <p id="calcScreenTextTwo" class="calcScreenText"></p>
+            </div>
         </div>
         <button id="btnAC">
             AC
@@ -52,7 +57,7 @@
             6
         </button>
         <button id="btnMinus">
-            -
+            −
         </button>
         <button id="btn1">
             1
@@ -67,7 +72,7 @@
             +
         </button>
         <button id="btnPlusMinus">
-            +/-
+            +/−
         </button>
         <button id="btn0">
             0

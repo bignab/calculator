@@ -19,17 +19,41 @@ body {
     column-gap: 5px;
     row-gap: 5px;
     padding: 10px;
+    grid-auto-flow: row;
 }
 
 #calcScreen {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 2;
     background-color: #D9C7EE;
     margin-bottom: 10px;
     border-radius: 10px;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.calcScreenText {
+    font-size: 2.5vh;
+    color: #1D0E2E;
+    padding-right: 20px;
+    margin: 0;
+}
+
+#calcScreenTextTwo {
+    font-size: 4vh;
+}
+
+#calcScreenTextOneDiv {
+    height: 2.5vh;
+}
+
+#calcScreenTextTwoDiv {
+    height: 4vh;
 }
 
 button {
@@ -53,27 +77,27 @@ button:active {
 #btnAC {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 #btnC {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 #btnModulo {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 #btnDivide {
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
